@@ -1,44 +1,58 @@
 # Mạch phát triển MKE-K01 ESP32-S3 Dev Kit
-## Giới thiệu sản phẩm
-Vietduino Uno là bo mạch phát triển do MakerEDU nghiên cứu và sản xuất, dựa trên nguyên mẫu Arduino Uno, được nâng cấp toàn diện về phần cứng, hướng tới độ ổn định cao, hiệu suất tốt và độ bền lâu dài – đặc biệt phù hợp cho Giáo Dục STEM, Phòng Thí Nghiệm, Maker Space, nghiên cứu và phát triển ứng dụng nhúng cơ bản.
-Mạch được thiết kế tương thích hoàn toàn với Arduino Uno về hình dạng, chuẩn chân tín hiệu và cách sử dụng, cho phép người dùng tận dụng trực tiếp toàn bộ hệ sinh thái Arduino: thư viện, ví dụ mẫu, shield và cộng đồng hỗ trợ.
+
+Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụng dựa trên module ESP32-S3-WROOM-1 chính hãng Espressif, được thiết kế tương thích với nguyên mẫu ESP32-S3 DevKitC-1, giúp người dùng tận dụng tối đa tài liệu, sơ đồ chân và phần mềm mẫu có sẵn. Sản phẩm tối ưu cho phát triển các dự án IoT, AIoT, nhúng và điều khiển không dây với hiệu năng xử lý mạnh mẽ và kết nối Wi-Fi/BLE linh hoạt.
+
 ## Ưu điểm nổi bật
-- Tương thích hoàn toàn Arduino Uno, giữ nguyên form factor, vị trí chân và chuẩn giao tiếp, dễ dàng thay thế Arduino Uno trong các dự án hiện có.
-- Nâng cấp mạch nguồn xung giảm áp hiệu suất chuyển đổi cao, tỏa nhiệt thấp, tiết kiệm năng lượng.
-- Hỗ trợ dải điện áp đầu vào rộng: **6 ~ 24VDC**
-- Dòng đầu ra lớn:
-  - **5VDC: tối đa 1500mA**
-  - **3.3VDC: tối đa 700mA**
-- **IC chuyển đổi USB–UART chính hãng**
-  - Sử dụng IC CH340, đảm bảo giao tiếp ổn định, nạp chương trình tin cậy và độ bền cao khi sử dụng lâu dài.
-- **Bảo vệ cổng USB máy tính**
-  - Tích hợp chức năng tự động cách ly nguồn USB khi cấp nguồn ngoài qua chân VIN hoặc Jack DC, giúp tăng độ an toàn trong quá trình học tập và thử nghiệm.
+- Ba tùy chọn cấu hình bộ nhớ:
+  - N16R8 – 16 MB Flash + 8 MB PSRAM (tối ưu cho ứng dụng AI/ML, buffer lớn)
+  - MCN4 – 4 MB Flash không PSRAM (phù hợp dự án cơ bản)
+  - MCN16 – 16 MB Flash không PSRAM (nhiều chương trình hơn, chi phí thấp)
+- Hỗ trợ kết nối Wi-Fi 2.4 GHz và Bluetooth Low Energy (BLE5)
+- CPU Dual-core Xtensa® LX7 cho hiệu năng cao, xử lý đa nhiệm mượt
+- LED RGB tích hợp điều khiển bằng GPIO
+- Cổng USB OTG + USB-to-UART onboard giúp nạp chương trình dễ dàng và giao tiếp với máy tính
+- Tích hợp đầy đủ chân GPIO breakout, tương thích thiết kế breadboard
+- Hỗ trợ môi trường phát triển Arduino IDE, ESP-IDF, MicroPython
+
+## Ứng dụng thực tế
+- Hệ thống IoT/Smart Home: điều khiển đèn, cảm biến từ xa
+- AIoT/Computer Vision nhẹ: nhận dạng cơ bản trên thiết bị
+- Thu thập dữ liệu không dây: sensor network, môi trường
+- Robot điều khiển và giáo dục STEM
+- Thiết bị điều khiển hiển thị/LED thông minh
+- Gateway Protocols/Edge Devices
+
 ## Thông số kỹ thuật
-### Thông tin chung
-- Model: Vietduino Uno (Arduino Uno Compatible)
-- Vi điều khiển: ATmega328P-PU (Microchip)
-- Điện áp hoạt động: 5VDC
-- Điện áp đầu vào VIN: 6 ~ 24VDC
-- Clock Speed: 16MHz
-### Bộ nhớ
-- Flash Memory: 32 KB (0.5 KB dùng cho bootloader)
-- SRAM: 2 KB
-- EEPROM: 1 KB
-### Dòng điện
-- Dòng DC mỗi chân I/O: Tối đa 20 mA
-- Dòng DC chân 3V3: Tối đa 700 mA
-- Dòng DC chân 5V: Tối đa 1500 mA
-### Giao tiếp & nạp chương trình
-- IC USB–UART: CH340
-- Cổng kết nối máy tính: USB-C hoặc USB-B
-### Các chân tín hiệu
-- Digital I/O: 14 chân(D0 ~ D13, trong đó 6 chân hỗ trợ PWM)
-- PWM: D3, D5, D6, D9, D10, D11
-- Analog Input: 6 chân (A0 ~ A5)
-- LED_BUILTIN: D13
-### Kích thước
+- Nguồn hoạt động: 5VDC từ cổng USB
+- Module trung tâm: ESP32-S3-WROOM-1 (Wi-Fi + BLE5)
+- CPU: Xtensa® Dual-core LX7, up to 240 MHz
+- Bộ nhớ Flash & PSRAM tùy chọn:
+  - 16 MB Flash + 8 MB PSRAM (N16R8)
+  - 4 MB Flash không PSRAM (MCN4)
+  - 16 MB Flash không PSRAM (MCN16)
+- Kết nối không dây:
+  - Wi-Fi 802.11 b/g/n (2.4 GHz)
+  - Bluetooth Low Energy BLE5
+- Cổng USB
+  - Cổng USB-to-UART (MicroUSB/USB-C tùy phiên bản) dùng để cấp nguồn, nạp chương trình và giao tiếp debug
+  - Cổng USB OTG full-speed (USB 1.1) trên chip ESP32-S3 hỗ trợ giao tiếp USB thiết bị/giao diện nếu phần mềm hỗ trợ
+- GPIO và giao tiếp
+  - Hầu hết chân GPIO của ESP32-S3 module được breakout ra header 2 bên, dễ dàng dùng cho các cảm biến/peripherals
+  - Các chuẩn giao tiếp bao gồm: UART, SPI, I2C, I2S, PWM, ADC
+  - Lưu ý: Một số chân (GPIO35/36/37) bị dùng bởi kết nối Flash/PSRAM trên module nên không dùng được ngoài
+- Nút chức năng
+  - RESET – khởi động lại MCU
+  - BOOT (Download) – đưa board vào chế độ nạp firmware
+- LED chỉ báo
+  - LED RGB addressable nằm trên board, được điều khiển qua GPIO48 giúp hiển thị trạng thái, debugging hoặc ánh sáng tùy chỉnh
+  - LED Power 3.3 V bật khi board được cấp nguồn qua USB
+- Giao diện lập trình: Arduino IDE, ESP-IDF, MicroPython
+- Kích thước nhỏ gọn và thiết kế tiện cho prototyping
+
+## Kích thước
 - Kích thước mạch: 68.6 × 53.34 mm
-![Vietduino Uno](/extras/VietduinoUno1.jpg)
+![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_0.png)
+
 ## Hướng dẫn sử dụng cơ bản với Arduino IDE
 ### Bước 1: Cài đặt Arduino IDE
 - Tải và cài đặt [Phần mềm Arduino IDE từ trang chủ Arduino](https://www.arduino.cc/en/software) phù hợp với hệ điều hành đang sử dụng.
@@ -91,5 +105,6 @@ void loop() {
   - Thay đổi đấu nối phần cứng
   - Kết nối lại với máy tính để nạp chương trình
  ## Hình ảnh sản phẩm
-![Vietduino Uno](/extras/VietduinoUno5.png)
-![Vietduino Uno](/extras/VietduinoUno6.png)
+![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_1.png)
+![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_2.png)
+
