@@ -96,7 +96,7 @@ void loop() {
   - Ẩm ướt
   - Nhiệt độ cao
   - Nhiều bụi dẫn điện
-- Nên sử dụng nguồn DC adapter chất lượng tốt
+- Nên sử dụng với nguồn điện chất lượng tốt
 - Luôn đảm bảo mạch:
   - Không bị chập mạch
   - Không đấu sai cực nguồn
@@ -107,5 +107,6 @@ void loop() {
  ## Hình ảnh sản phẩm
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_1.png)
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_2.png)
+
 
 
