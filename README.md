@@ -70,9 +70,9 @@ Thực hiện các thiết lập sau trong Arduino IDE:
 - Chọn cổng kết nối (Port): Tools → Port → chọn cổng tương ứng với MKE-K01 ESP32-S3 Dev Kit (nếu chưa xác định được, hãy rút cáp USB và cắm lại để nhận diện cổng mới xuất hiện)
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_1.png)
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_2.png)
-### Bước 5: Nạp chương trình thử nghiệm (Blink)
-Sau khi cấu hình xong, bạn có thể nạp chương trình Blink để kiểm tra mạch.
-Chương trình này sẽ làm LED_BUILTIN tại chân D13 chớp tắt mỗi 1 giây.
+### Bước 5: Nạp chương trình thử nghiệm (Wifi Scan)
+Sau khi cấu hình xong, bạn có thể nạp chương trình Wifi Scan để kiểm tra mạch.
+Chương trình này sẽ quét các mạng Wifi có sẵn trong khu vực và hiển thị lên Termibal của Arduino.
 ```ino
 /*
   Blink
@@ -109,6 +109,7 @@ void loop() {
  ## Hình ảnh sản phẩm
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_3.png)
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_4.png)
+
 
 
 
