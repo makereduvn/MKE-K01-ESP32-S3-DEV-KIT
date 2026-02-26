@@ -11,6 +11,7 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 - Gateway Protocols/Edge Devices
 
 ## Ưu điểm nổi bật
+- Sử dụng module trung tâm ESP32-S3-WROOM-1 chính hãng Espressif và các linh kiện chính hãng chất lượng cao.
 - Ba tùy chọn cấu hình bộ nhớ:
   - N16R8 – 16 MB Flash + 8 MB PSRAM (tối ưu cho ứng dụng AI/ML, buffer lớn)
   - MCN4 – 4 MB Flash không PSRAM (phù hợp dự án cơ bản)
@@ -24,7 +25,7 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 
 ## Thông số kỹ thuật
 - Nguồn hoạt động: 5VDC từ cổng USB
-- Module trung tâm: ESP32-S3-WROOM-1 (Wi-Fi + BLE5)
+- Module trung tâm: ESP32-S3-WROOM-1 (Wi-Fi + BLE5) chính hãng Espressif
 - CPU: Xtensa® Dual-core LX7, up to 240 MHz
 - Bộ nhớ Flash & PSRAM tùy chọn:
   - 16 MB Flash + 8 MB PSRAM (N16R8)
@@ -33,6 +34,7 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 - Kết nối không dây:
   - Wi-Fi 802.11 b/g/n (2.4 GHz)
   - Bluetooth Low Energy BLE5
+- IC giao tiếp USB-UART: High-speed Serial UART CH343P chính hãng có tốc độ truyền tối đa lên đến 6Mbp tương thích chuẩn USB 2.0, tự nhận Driver trên hầu hết các hệ điều hành.
 - Cổng USB
   - Cổng USB-to-UART (MicroUSB/USB-C tùy phiên bản) dùng để cấp nguồn, nạp chương trình và giao tiếp debug
   - Cổng USB OTG full-speed (USB 1.1) trên chip ESP32-S3 hỗ trợ giao tiếp USB thiết bị/giao diện nếu phần mềm hỗ trợ
@@ -50,7 +52,7 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 - Kích thước nhỏ gọn và thiết kế tiện cho prototyping
 
 ## Kích thước
-- Kích thước mạch: 68.6 × 53.34 mm
+- Kích thước mạch:
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_0.png)
 
 ## Hướng dẫn sử dụng cơ bản với Arduino IDE
@@ -60,8 +62,8 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 - Kết nối MKE-K01 ESP32-S3 Dev Kit với máy tính bằng cáp USB.
 - Khi kết nối thành công, LED nguồn (ON) trên mạch sẽ sáng.
 ### Bước 3: Cài đặt driver CH340
-- MKE-K01 ESP32-S3 Dev Kit sử dụng IC CH340 để giao tiếp USB–UART.
-- Nếu máy tính chưa nhận mạch, hãy cài đặt Driver CH340 phù hợp với hệ điều hành.
+- MKE-K01 ESP32-S3 Dev Kit sử dụng IC CH343P để giao tiếp USB–UART.
+- Nếu máy tính chưa nhận mạch, hãy cài đặt Driver CH343P phù hợp với hệ điều hành, thông thường Driver sẽ tự nhận trên hầu hết các hệ điều hành.
 ### Bước 4: Cấu hình mạch trong Arduino IDE
 Thực hiện các thiết lập sau trong Arduino IDE:
 - Chọn loại board: Tools → Board → 
@@ -107,6 +109,7 @@ void loop() {
  ## Hình ảnh sản phẩm
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_3.png)
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_4.png)
+
 
 
 
