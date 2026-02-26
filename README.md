@@ -57,17 +57,17 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 ### Bước 1: Cài đặt Arduino IDE
 - Tải và cài đặt [Phần mềm Arduino IDE từ trang chủ Arduino](https://www.arduino.cc/en/software) phù hợp với hệ điều hành đang sử dụng.
 ### Bước 2: Kết nối mạch với máy tính
-- Kết nối Vietduino Uno với máy tính bằng cáp USB.
+- Kết nối MKE-K01 ESP32-S3 Dev Kit với máy tính bằng cáp USB.
 - Khi kết nối thành công, LED nguồn (ON) trên mạch sẽ sáng.
 ### Bước 3: Cài đặt driver CH340
-- Vietduino Uno sử dụng IC CH340 để giao tiếp USB–UART.
+- MKE-K01 ESP32-S3 Dev Kit sử dụng IC CH340 để giao tiếp USB–UART.
 - Nếu máy tính chưa nhận mạch, hãy cài đặt Driver CH340 phù hợp với hệ điều hành.
 ### Bước 4: Cấu hình mạch trong Arduino IDE
 Thực hiện các thiết lập sau trong Arduino IDE:
-- Chọn loại board: Tools → Board → Arduino AVR Boards → Arduino Uno
-- Chọn cổng kết nối (Port): Tools → Port → chọn cổng tương ứng với Vietduino Uno (nếu chưa xác định được, hãy rút cáp USB và cắm lại để nhận diện cổng mới xuất hiện)
-![Vietduino Uno](/extras/VietduinoUno3.jpg)
-![Vietduino Uno](/extras/VietduinoUno4.jpg)
+- Chọn loại board: Tools → Board → 
+- Chọn cổng kết nối (Port): Tools → Port → chọn cổng tương ứng với MKE-K01 ESP32-S3 Dev Kit (nếu chưa xác định được, hãy rút cáp USB và cắm lại để nhận diện cổng mới xuất hiện)
+![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_1.png)
+![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_2.png)
 ### Bước 5: Nạp chương trình thử nghiệm (Blink)
 Sau khi cấu hình xong, bạn có thể nạp chương trình Blink để kiểm tra mạch.
 Chương trình này sẽ làm LED_BUILTIN tại chân D13 chớp tắt mỗi 1 giây.
@@ -105,8 +105,9 @@ void loop() {
   - Thay đổi đấu nối phần cứng
   - Kết nối lại với máy tính để nạp chương trình
  ## Hình ảnh sản phẩm
-![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_1.png)
-![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_2.png)
+![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_3.png)
+![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_4.png)
+
 
 
 
