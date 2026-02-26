@@ -2,7 +2,7 @@
 
 Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụng dựa trên module ESP32-S3-WROOM-1 chính hãng Espressif, được thiết kế tương thích với nguyên mẫu ESP32-S3 DevKitC-1, giúp người dùng tận dụng tối đa tài liệu, sơ đồ chân và phần mềm mẫu có sẵn. Sản phẩm tối ưu cho phát triển các dự án IoT, AIoT, nhúng và điều khiển không dây với hiệu năng xử lý mạnh mẽ và kết nối Wi-Fi/BLE linh hoạt.
 
-**Ứng dụng thực tế**
+Ứng dụng thực tế:
 - Hệ thống IoT/Smart Home: điều khiển đèn, cảm biến từ xa
 - AIoT/Computer Vision nhẹ: nhận dạng cơ bản trên thiết bị
 - Thu thập dữ liệu không dây: sensor network, môi trường
@@ -109,6 +109,7 @@ void loop() {
  ## Hình ảnh sản phẩm
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_3.png)
 ![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_4.png)
+
 
 
 
