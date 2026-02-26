@@ -52,8 +52,10 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 - Kích thước nhỏ gọn và thiết kế tiện cho prototyping
 
 ## Kích thước
-- Kích thước mạch:
-![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_0.png)
+![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_0.jpg)
+
+## Sơ đồ chân
+![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_1.png)
 
 ## Hướng dẫn sử dụng cơ bản với Arduino IDE
 ### Bước 1: Cài đặt Arduino IDE
@@ -107,8 +109,9 @@ void loop() {
   - Thay đổi đấu nối phần cứng
   - Kết nối lại với máy tính để nạp chương trình
  ## Hình ảnh sản phẩm
-![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_3.png)
-![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_4.png)
+![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_2.png)
+![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_3.png)
+
 
 
 
