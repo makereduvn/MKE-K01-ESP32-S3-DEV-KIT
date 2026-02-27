@@ -73,6 +73,7 @@ Thực hiện các thiết lập sau trong Arduino IDE:
 - Chọn loại board: Tools → Board → esp32 → ESP32S3 Dev Module
 - Cấu hình các thông số cần thiết như Flash Size, Partititon Scheme (theo phiên bản bộ nhớ Flash bạn đang sử dụng), PSRAM (nếu có chọn OPI PSRAM), các thông số khác có thể để ở mặc định.
 - Chọn cổng kết nối (Port): Tools → Port → chọn cổng tương ứng với MKE-K01 ESP32-S3 Dev Kit (nếu chưa xác định được, hãy rút cáp USB và cắm lại để nhận diện cổng mới xuất hiện).
+
 _Dưới đây là ví dụ cấu hình mạch ESP32-S3 16 MB Flash + 8 MB PSRAM (N16R8):_
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_4.png)
 ### Bước 5: Nạp chương trình thử nghiệm (Wifi Scan)
@@ -96,4 +97,5 @@ Chương trình này sẽ quét các mạng Wifi có sẵn trong khu vực và h
  ## Hình ảnh sản phẩm
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_6.png)
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_7.png)
+
 
