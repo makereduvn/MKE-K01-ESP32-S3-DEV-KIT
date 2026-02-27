@@ -67,7 +67,7 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 - Khi kết nối thành công, LED nguồn (ON) trên mạch sẽ sáng.
 ### Bước 3: Cài đặt driver CH340
 - MKE-K01 ESP32-S3 Dev Kit sử dụng IC CH343P để giao tiếp USB–UART.
-- Nếu máy tính chưa nhận mạch, hãy cài đặt Driver CH343P phù hợp với hệ điều hành, thông thường Driver sẽ tự nhận trên hầu hết các hệ điều hành.
+- Thông thường Driver sẽ tự nhận trên hầu hết các hệ điều hành, nếu máy tính chưa nhận driver, [tải và cài đặt Driver CH343P tại đây.](https://www.wch-ic.com/downloads/CH343SER_ZIP.html)
 ### Bước 4: Cấu hình mạch trong Arduino IDE
 Thực hiện các thiết lập sau trong Arduino IDE:
 - Chọn loại board: Tools → Board → esp32 → ESP32S3 Dev Module
@@ -99,6 +99,7 @@ Chương trình này sẽ quét các mạng Wifi có sẵn trong khu vực và h
  ## Hình ảnh sản phẩm
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_6.png)
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_7.png)
+
 
 
 
