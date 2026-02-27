@@ -58,42 +58,26 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_1.png)
 
 ## Hướng dẫn sử dụng cơ bản với Arduino IDE
-### Bước 1: Cài đặt Arduino IDE
+### Bước 1: Cài đặt Arduino IDE và cấu hình mạch
 - Tải và cài đặt [Phần mềm Arduino IDE từ trang chủ Arduino](https://www.arduino.cc/en/software) phù hợp với hệ điều hành đang sử dụng.
+- Sau khi cài đặt, chọn Tools → Board → Boards Manager, tìm từ khoá "esp32" để cài đặt cấu hình các mạch "esp32 by Espressif Systems".
+![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_3.png)
 ### Bước 2: Kết nối mạch với máy tính
-- Kết nối MKE-K01 ESP32-S3 Dev Kit với máy tính bằng cáp USB.
+- Kết nối MKE-K01 ESP32-S3 Dev Kit với máy tính bằng cáp USB vào cổng USB-UART.
 - Khi kết nối thành công, LED nguồn (ON) trên mạch sẽ sáng.
 ### Bước 3: Cài đặt driver CH340
 - MKE-K01 ESP32-S3 Dev Kit sử dụng IC CH343P để giao tiếp USB–UART.
 - Nếu máy tính chưa nhận mạch, hãy cài đặt Driver CH343P phù hợp với hệ điều hành, thông thường Driver sẽ tự nhận trên hầu hết các hệ điều hành.
 ### Bước 4: Cấu hình mạch trong Arduino IDE
 Thực hiện các thiết lập sau trong Arduino IDE:
-- Chọn loại board: Tools → Board → 
-- Chọn cổng kết nối (Port): Tools → Port → chọn cổng tương ứng với MKE-K01 ESP32-S3 Dev Kit (nếu chưa xác định được, hãy rút cáp USB và cắm lại để nhận diện cổng mới xuất hiện)
-![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_1.png)
-![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_2.png)
+- Chọn loại board: Tools → Board → esp32 → ESP32S3 Dev Module
+- Cấu hình các thông số cần thiết như Flash Size, Partititon Scheme (theo phiên bản bộ nhớ Flash bạn đang sử dụng), PSRAM (nếu có chọn OPI PSRAM), các thông số khác có thể để ở mặc định.
+- Chọn cổng kết nối (Port): Tools → Port → chọn cổng tương ứng với MKE-K01 ESP32-S3 Dev Kit (nếu chưa xác định được, hãy rút cáp USB và cắm lại để nhận diện cổng mới xuất hiện).
+![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_4.png)
 ### Bước 5: Nạp chương trình thử nghiệm (Wifi Scan)
-Sau khi cấu hình xong, bạn có thể nạp chương trình Wifi Scan để kiểm tra mạch.
+Sau khi cấu hình xong, bạn có thể nạp chương trình mẫu tại File → Examples → Wifi → WiFiScan để kiểm tra mạch, mạch có thiết kế chức năng nạp tự động nên không cần nhấn các nút Boot hoặc Reset.
 Chương trình này sẽ quét các mạng Wifi có sẵn trong khu vực và hiển thị lên Termibal của Arduino.
-```ino
-/*
-  Blink
-  Turns an LED_BUILTIN on D13 of Vietduino Uno for one second, then off for one second, repeatedly.
-*/
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN on D13 as an output.
-  pinMode(13, OUTPUT);
-}
-
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(13, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);                      // wait for a second
-  digitalWrite(13, LOW);   // turn the LED off by making the voltage LOW
-  delay(1000);                      // wait for a second
-}
-```
+![MKE-K01 ESP32-S3 DK](/extras/esp32s3dk_5.png)
 ## Lưu ý sử dụng an toàn
 - Không đặt mạch trên bề mặt kim loại dẫn điện
 - Tránh môi trường:
@@ -109,13 +93,5 @@ void loop() {
   - Thay đổi đấu nối phần cứng
   - Kết nối lại với máy tính để nạp chương trình
  ## Hình ảnh sản phẩm
-![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_2.png)
-![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_3.png)
-
-
-
-
-
-
-
-
+![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_6.png)
+![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_7.png)
