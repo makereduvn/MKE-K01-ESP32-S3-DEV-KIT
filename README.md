@@ -71,7 +71,7 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 ### Bước 4: Cấu hình mạch trong Arduino IDE
 Thực hiện các thiết lập sau trong Arduino IDE:
 - Chọn loại board: Tools → Board → esp32 → ESP32S3 Dev Module
-- Cấu hình các thông số cần thiết như Flash Size, Partititon Scheme (theo phiên bản bộ nhớ Flash bạn đang sử dụng), PSRAM (nếu có chọn OPI PSRAM), các thông số khác có thể để ở mặc định.
+- Cấu hình các thông số cần thiết như Flash Size, Partititon Scheme (theo phiên bản bộ nhớ Flash bạn đang sử dụng), PSRAM (nếu có chọn OPI PSRAM), các thông số khác có thể để ở mặc định. _(Lưu ý mục Upload Speed với Windows có thể chọn tốc độ 921600, tuy nhiên với MacOS hoặc các hệ điều hành khác nếu báo lỗi thì nên chọn 115200)_
 - Chọn cổng kết nối (Port): Tools → Port → chọn cổng tương ứng với MKE-K01 ESP32-S3 Dev Kit (nếu chưa xác định được, hãy rút cáp USB và cắm lại để nhận diện cổng mới xuất hiện).
 
 _Dưới đây là ví dụ cấu hình mạch ESP32-S3 16 MB Flash + 8 MB PSRAM (N16R8):_
@@ -99,6 +99,7 @@ Chương trình này sẽ quét các mạng Wifi có sẵn trong khu vực và h
  ## Hình ảnh sản phẩm
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_6.png)
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_7.png)
+
 
 
 
