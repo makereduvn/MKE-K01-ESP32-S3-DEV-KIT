@@ -67,7 +67,7 @@ Mạch phát triển MKE-K01 ESP32-S3 Dev Kit là board phát triển ứng dụ
 - Khi kết nối thành công, LED nguồn (ON) trên mạch sẽ sáng.
 ### Bước 3: Cài đặt driver CH340
 - MKE-K01 ESP32-S3 Dev Kit sử dụng IC CH343P để giao tiếp USB–UART.
-- Nếu máy tính chưa nhận mạch, hãy cài đặt Driver CH343P phù hợp với hệ điều hành, thông thường Driver sẽ tự nhận trên hầu hết các hệ điều hành.
+- Thông thường Driver sẽ tự nhận trên hầu hết các hệ điều hành, nếu máy tính chưa nhận driver, [tải và cài đặt Driver CH343P tại đây.](https://www.wch-ic.com/downloads/CH343SER_ZIP.html)
 ### Bước 4: Cấu hình mạch trong Arduino IDE
 Thực hiện các thiết lập sau trong Arduino IDE:
 - Chọn loại board: Tools → Board → esp32 → ESP32S3 Dev Module
@@ -78,8 +78,10 @@ _Dưới đây là ví dụ cấu hình mạch ESP32-S3 16 MB Flash + 8 MB PSRAM
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_4.png)
 ### Bước 5: Nạp chương trình thử nghiệm (Wifi Scan)
 Sau khi cấu hình xong, bạn có thể nạp chương trình mẫu tại File → Examples → Wifi → WiFiScan để kiểm tra mạch, mạch có thiết kế chức năng nạp tự động nên không cần nhấn các nút Boot hoặc Reset.
-Chương trình này sẽ quét các mạng Wifi có sẵn trong khu vực và hiển thị lên Termibal của Arduino.
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_5.png)
+
+Chương trình này sẽ quét các mạng Wifi có sẵn trong khu vực và hiển thị lên Serial Monitor của Arduino.
+![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_2.png)
 ## Lưu ý sử dụng an toàn
 - Không đặt mạch trên bề mặt kim loại dẫn điện
 - Tránh môi trường:
@@ -97,5 +99,8 @@ Chương trình này sẽ quét các mạng Wifi có sẵn trong khu vực và h
  ## Hình ảnh sản phẩm
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_6.png)
 ![MKE-K01 ESP32-S3 DK](/extras/MKE-K01_7.png)
+
+
+
 
 
